@@ -8,12 +8,19 @@
         var num = document.getElementById("n1");
         num.value = Math.pow(num.value, 3);
       }
+      function pow(n) {
+        var num = document.getElementById("n1");
+        num.value = Math.pow(num.value, n);
+      }
     </script>
   </head>
   <body>
     <h1>Calculadora de <em>Javier García de Arriba</em><h1>
     <label for="n1">Number:</label>
       <input type="text" id="n1">
-    <p><button onclick="cube()"> x^3 </button></p>
+    <p>
+      <button onclick="cube()"> x^3 </button>
+      <button onclick="pow(4)"> x^4 </button>
+    </p>
   </body>
 </html>
